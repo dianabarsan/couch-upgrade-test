@@ -9,10 +9,10 @@ const dataPath = path.join(__dirname, '..', 'data');
 const nbrDocuments = 1000;
 
 const ddoc = {
-  "_id": "_design/test",
-  "views": {
-    "view": {
-      "map": "function(doc) {\n  emit(doc.value); }",
+  _id: '_design/test',
+  views: {
+    view: {
+      map: 'function(doc) { emit(doc.value); }',
     }
   }
 };

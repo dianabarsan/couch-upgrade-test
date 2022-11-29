@@ -45,3 +45,5 @@ curl $couch_url/_membership
 
 # assert all docs are present and views are indexed
 node ./assert-dbs.js $couch_url
+
+docker rm -f -v test-couchdb3

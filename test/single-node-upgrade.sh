@@ -17,7 +17,8 @@ waitForStatus() {
   echo "CouchDb ready"
 }
 
-rm -rf ./data/*
+mkdir -p ../data
+rm -rf ../data/*
 docker rm -f -v test-couchdb2 test-couchdb3
 
 couch2dir=$(mktemp -d -t couchdb-2x-XXXXXXXXXX)
